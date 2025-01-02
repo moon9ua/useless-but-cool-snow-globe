@@ -46,3 +46,10 @@ a {
   padding: 0;
   margin: 0;
 }
+
+#crystal {
+  position: absolute;
+  opacity: 50%;
+  top: 120px;
+  left: 225px;
+}
