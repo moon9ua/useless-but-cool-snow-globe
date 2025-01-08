@@ -8,10 +8,11 @@ export default function Page() {
       <Image
         alt="crystal"
         src={crystal}
-        width={350}
-        height={450}
+        width={380}
+        height={470}
         id="crystal"
       />
+
       <Canvas />
     </>
   );
