@@ -15,12 +15,7 @@ export default function Canvas() {
       Render = Matter.Render,
       Runner = Matter.Runner,
       Composites = Matter.Composites,
-      // Common = Matter.Common,
-      // MouseConstraint = Matter.MouseConstraint,
-      // Mouse = Matter.Mouse,
       Composite = Matter.Composite,
-      // Query = Matter.Query,
-      // Svg = Matter.Svg,
       Bodies = Matter.Bodies,
       Body = Matter.Body;
 
@@ -36,7 +31,7 @@ export default function Canvas() {
         width: 800,
         height: 600,
         wireframes: false,
-        background: "gray",
+        background: "transparent",
       },
     });
 
@@ -67,7 +62,7 @@ export default function Canvas() {
       Composite.add(world, wall);
     }
 
-    const floor = Bodies.rectangle(400, 685, 500, 500, {
+    const floor = Bodies.polygon(400, 615, 8, 220, {
       isStatic: true,
       render: {
         fillStyle: "transparent",
