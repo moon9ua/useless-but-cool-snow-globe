@@ -1,6 +1,6 @@
 import Canvas from "@/components/Canvas";
 import Image from "next/image";
-import crystal from "../public/png/snow-ball.png";
+import crystal from "../public/img/snow-ball5.png";
 
 export default function Page() {
   return (
@@ -10,7 +10,7 @@ export default function Page() {
         src={crystal}
         width={380}
         height={470}
-        id="crystal"
+        className="crystal"
       />
 
       <Canvas />

@@ -4,9 +4,17 @@
   margin: 0;
 }
 
-#crystal {
-  position: absolute;
-  opacity: 50%;
-  top: 108px;
-  left: 210px;
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crystal {
+  position: relative;
+  top: 43px;
+  z-index: 1;
 }
