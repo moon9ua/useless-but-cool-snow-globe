@@ -1,14 +1,12 @@
-"use client";
-
 import Matter from "matter-js";
-import { useEffect, useRef } from "react";
-import styles from "./Canvas.module.css";
+import { RefObject, useEffect } from "react";
 
-export default function Canvas() {
-  const containerRef = useRef<HTMLDivElement>(null);
-
+export default function useParticles(
+  containerRef: RefObject<HTMLDivElement | null>
+) {
   useEffect(() => {
     const container = containerRef.current;
+
     if (container === null) return;
 
     const Engine = Matter.Engine,
@@ -130,7 +128,5 @@ export default function Canvas() {
     window.onmousedown = shake;
 
     shake();
-  }, []);
-
-  return <div ref={containerRef} className={styles.container} />;
+  }, [containerRef]);
 }
