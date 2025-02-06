@@ -1,16 +1,17 @@
 import Canvas from "@/components/Canvas";
 import Image from "next/image";
-import crystal from "../public/images/snow-ball-with-snow-and-tree-2.png";
+import crystalBallImg from "../public/images/crystal-ball-with-snow-and-tree-2.png";
+import styles from "./page.module.css";
 
 export default function Page() {
   return (
     <>
       <Image
-        alt="crystal"
-        src={crystal}
+        alt="crystal-ball"
+        src={crystalBallImg}
         width={380}
         height={470}
-        className="crystal"
+        className={styles["crystal-ball"]}
       />
 
       <Canvas />
