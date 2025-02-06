@@ -1,6 +1,6 @@
 import Canvas from "@/components/Canvas";
 import Image from "next/image";
-import crystal from "../public/img/snow-ball5.png";
+import crystal from "../public/images/snow-ball-with-snow-and-tree-2.png";
 
 export default function Page() {
   return (
