@@ -12,9 +12,3 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.crystal {
-  position: relative;
-  top: 43px;
-  z-index: 1;
-}
